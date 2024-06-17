@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:movie_app/widgets/CustomNavBar.dart';
+import 'package:movie_app/widgets/NewMoviesWidget.dart';
 import 'package:movie_app/widgets/UpcomingWidget.dart';
 
 class HomePage extends StatelessWidget{
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget{
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
-                      "images/profile.jpg",
+                      "images/profile.jfif",
                       height:60,
                       width:60,
                     ),
@@ -80,10 +82,13 @@ class HomePage extends StatelessWidget{
               ),
               SizedBox(height: 30),
               UpcomingWidget(),
+              SizedBox(height: 40),
+              NewMoviesWidget(),
             ],
           ),
         ),
       ),
+      bottomNavigationBar: CustomNavBar(),
     );
   }
 }

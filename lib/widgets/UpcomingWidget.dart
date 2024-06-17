@@ -8,6 +8,7 @@ class UpcomingWidget extends StatelessWidget{
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 "Próximas películas",
@@ -17,6 +18,34 @@ class UpcomingWidget extends StatelessWidget{
                   fontWeight: FontWeight.w500,
                 ),
               ),
+              Text(
+                "Ver todo",
+                style: TextStyle(
+                  color: Colors.white54,
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 15),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              for(int i=1; i<4; i++)
+                Padding(
+                  padding: EdgeInsets.only(left: 10),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Image.asset(
+                      "images/up$i.jfif",
+                      height: 180,
+                      width: 300,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
             ],
           ),
         ),
