@@ -35,7 +35,9 @@ class NewMoviesWidget extends StatelessWidget{
             children: [
               for(int i=1; i<11; i++)
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, "MoviePage");
+                },
                 child: Container(
                   width: 190,
                   height: 300,
