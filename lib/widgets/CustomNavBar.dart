@@ -28,7 +28,9 @@ class CustomNavBar extends StatelessWidget{
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "CategoryPage");
+            },
             child: Icon(
               Icons.category,
               size: 35,
