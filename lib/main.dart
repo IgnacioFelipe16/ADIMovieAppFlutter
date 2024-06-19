@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:movie_app/pages/HomePage.dart';
+import 'package:movie_app/pages/LoginPage.dart';
 
 void main(){
   runApp(MyApp());
