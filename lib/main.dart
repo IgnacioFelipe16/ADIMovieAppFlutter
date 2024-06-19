@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:movie_app/pages/CategoryPage.dart';
 import 'package:movie_app/pages/HomePage.dart';
+import 'package:movie_app/pages/LoginPage.dart';
 import 'package:movie_app/pages/MoviePage.dart';
 
 void main(){
