@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget{
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Hola Ignacio",
+                          "Hola rey",
                           style: TextStyle(
                           color: Colors.white,
                           fontSize: 28,
